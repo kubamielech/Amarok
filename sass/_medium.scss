@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    .header {
+         &__title {
+             font-size: 4.4rem;
+
+             &::before {
+                 left: 50px;
+                 top: -10px;
+             }
+         }
+    }
+}

@@ -1,0 +1,139 @@
+@media (min-width: 992px) {
+	.section-title {
+		font-size: 4rem;
+	}
+
+	.nav-active {
+		position: fixed;
+		top: 0;
+		transform: translateY(-150%);
+		animation: nav-animation 0.5s forwards;
+	}
+
+	.navbar {
+		&__mobile {
+			display: none;
+		}
+
+		&__desktop {
+			display: block;
+		}
+
+		&__item,
+		&__item::after,
+		&__item::before {
+			transition: width 0.3s;
+		}
+
+		&__item {
+			color: $white;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				bottom: 0;
+				border-bottom: 2px solid white;
+			}
+
+			&::before {
+				right: 50%;
+			}
+
+			&::after {
+				left: 50%;
+			}
+
+			&:hover::before,
+			&:hover::after {
+				width: 30%;
+			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.section-title {
+		text-align: left;
+
+		&::after {
+			left: 0;
+			transform: translateX(0);
+		}
+	}
+
+	.header {
+		background-image: url('../img/amarok-bg-big.jpg');
+
+		&__title {
+			font-size: 5rem;
+
+			&::before {
+				left: 50px;
+				top: -20px;
+				font-size: 15rem;
+			}
+		}
+	}
+
+	.offer {
+		&__card {
+			padding: 3em;
+		}
+	}
+
+	.trainers {
+		&__card {
+			margin-top: 0;
+		}
+	}
+
+	.footer {
+		&__box {
+			flex-direction: row;
+			align-items: start;
+		}
+
+		&__bottom {
+			&-link {
+				margin-right: 2.5em;
+			}
+		}
+
+		&__title {
+			&--special {
+				text-align: center;
+			}
+		}
+
+		&__links {
+			align-items: center;
+			margin-top: 0;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.nav {
+		position: fixed;
+	}
+}
+
+@media (min-width: 1200px) {
+	.about {
+		&__img {
+			margin-left: 4em;
+		}
+	}
+
+	.gallery__img-box {
+		display: none;
+	}
+
+	.slider {
+		display: block;
+	}
+}

@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+    .offer {
+        &__card {
+            margin: 1em;
+        }
+    }
+
+    .accordion {
+        &__btn {
+            font-size: 3rem;
+        }
+
+        &__btn .fas, &__btn .far {
+            width: 50px;
+        }
+    }
+
+    .trainers {
+        &__card {
+            margin: 1em;
+        }
+    }
+}
