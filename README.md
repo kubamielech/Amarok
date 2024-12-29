@@ -1,2 +1,2 @@
-# Amarok
-live: https://kubamielech.github.io/Amarok/
+# amarok gym
+live: https://kubamielech.github.io/amarok_gym/
